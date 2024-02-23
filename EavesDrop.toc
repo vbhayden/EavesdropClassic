@@ -1,9 +1,10 @@
-## Interface: 100200
-## Title: EavesDrop
+## Interface: 11302
+## Title: EavesDrop Classic
 ## Notes: A simple combat log that displays events similar to SCT
-## Version: 10.2.00
-## Author: Grayhoof (Edited by Domzae, Schoolias)
-## IconTexture: Interface\AddOns\Eavesdrop\media\textures\icon.blp
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## Version: SoD Phase 2
+## Author: Grayhoof (Edited by Domzae, shoestare, Schoolias)
 ## SavedVariables: EavesDropDB
 ## SavedVariablesPerCharacter: EavesDropStatsDB
 ## X-Website: http://github.com/vbhayden/Eavesdrop
@@ -17,10 +18,11 @@
 ## X-Curse-Repository-ID: wow/eaves-drop/mainline
 
 embeds.xml
-templates.xml
+
 locals\localization-enUS.lua
 locals\localization-koKR.lua
 locals\localization-zhCN.lua
 EavesDrop.lua
 EavesDropStats.lua
 options.lua
+EavesDrop.xml

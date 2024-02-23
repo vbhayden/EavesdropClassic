@@ -1,4 +1,4 @@
-﻿local L = LibStub("AceLocale-3.0"):NewLocale("EavesDrop", "zhCN", false)
+local L = LibStub("AceLocale-3.0"):NewLocale("EavesDrop", "zhCN", false)
 
 if L then
 --main
@@ -14,7 +14,6 @@ L["Crit"] = "爆击"
 L["Skill"] = "技能"
 L["Reset"] = "重置"
 L["Fades"] = "消失"
-L["Gained"] = "获得"
 L["OutgoingDamage"] = "伤害输出"
 L["OutgoingHeals"] = "治疗输出"
 L["IncomingDamge"] = "伤害承受"
