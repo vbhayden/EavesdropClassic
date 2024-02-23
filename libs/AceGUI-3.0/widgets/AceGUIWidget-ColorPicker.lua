@@ -59,7 +59,7 @@ local function ColorSwatch_OnClick(frame)
 		ColorPickerFrame.func = function()
 			local r, g, b = ColorPickerFrame:GetColorRGB()
 			local a = 1 - OpacitySliderFrame:GetValue()
-			ColorCallback(self, r, g, b, a)
+			ColorCallback(self, r, g, b, a, true)
 		end
 
 		ColorPickerFrame.hasOpacity = self.HasAlpha
@@ -76,7 +76,15 @@ local function ColorSwatch_OnClick(frame)
 		ColorPickerFrame:SetColorRGB(r, g, b)
 
 		ColorPickerFrame.cancelFunc = function()
-			ColorCallback(self, r, g, b, a, true)
+			local r, g, b = ColorPickerFrame:GetColorRGB()
+			local a = 1 - OpacitySliderFrame:GetValue()
+			ColorCallback(self, r, g, b, a)
+		end
+
+		ColorPickerFrame.swatchFunc = function()
+			local r, g, b = ColorPickerFrame:GetColorRGB()
+			local a = 1 - OpacitySliderFrame:GetValue()
+			ColorCallback(self, r, g, b, a)
 		end
 
 		ShowUIPanel(ColorPickerFrame)

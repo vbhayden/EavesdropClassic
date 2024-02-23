@@ -4,7 +4,7 @@
 ## DefaultState: Enabled
 ## LoadOnDemand: 0
 ## Version: SoD Phase 2
-## Author: Grayhoof (Edited by Domzae, shoestare, Schoolias)
+## Author: Grayhoof (Edited by Domzae, Schoolias)
 ## SavedVariables: EavesDropDB
 ## SavedVariablesPerCharacter: EavesDropStatsDB
 ## X-Website: http://github.com/vbhayden/Eavesdrop

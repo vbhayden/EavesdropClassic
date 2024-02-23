@@ -405,10 +405,14 @@
   
   function EavesDrop:SetFonts()
       local requestedFont = media:Fetch("font", db["FONT"])
+
+      -- message(requestedFont .. " -- vs. -- " .. "Fonts\\FRIZQT__.TTF")
+      -- message(db["TEXTSIZE"])
   
       -- -- TODO
-      -- EavesDropFontNormal:SetFont(requestedFont, db["TEXTSIZE"])
-      -- EavesDropFontNormalSmall:SetFont(requestedFont, db["TEXTSIZE"])
+      -- EavesDropFontNormal:SetFont("Fonts\\FRIZQT__.TTF", db["TEXTSIZE"], "OUTLINE, MONOCHROME")
+      EavesDropFontNormal:SetFont(requestedFont, db["TEXTSIZE"], "OUTLINE, MONOCHROME")
+      EavesDropFontNormalSmall:SetFont(requestedFont, db["TEXTSIZE"], "OUTLINE, MONOCHROME")
   end
   
   function EavesDrop:PlaceFrame()
@@ -558,7 +562,7 @@
           if toPlayer and db[auraType] then
               self:DisplayEvent(INCOMING, self:ShortenString(spellName) .. " " ..
                                     L["Gained"], texture, db["P" .. auraType],
-                                message, spellName)
+                                    message, spellName)
           else
               return
           end
